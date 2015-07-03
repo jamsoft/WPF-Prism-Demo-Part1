@@ -1,0 +1,12 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="JamSoft.CALDemo.Modules.ModuleB.ModuleBView">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="I AM MODULE B" />
+            <TextBox x:Name="txtMessageToSend" Text="{Binding Path=MessageToSend, Mode=TwoWay}" Style="{DynamicResource TextBoxStyle1}" />
+            <Button x:Name="btnSendMessage" Command="{Binding Path=SendMessageCommand}" Content="Publish Message" Style="{DynamicResource ButtonStyle1}" />
+        </StackPanel>
+    </Grid>
+</UserControl>
